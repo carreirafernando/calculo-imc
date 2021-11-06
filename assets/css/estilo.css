@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(13, 169, 241);
+    --primary-color-darker: rgb(13, 92, 129);
+
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+form input {
+    margin-bottom: 20px;
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    border: 0.5px solid rgb(216, 229, 238);
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.titulo {
+    display: flex;
+    background: rgb(227, 243, 248);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.titulo .p-1 {
+    width: 50%;
+}
+
+.titulo .p-2 {
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input::placeholder {
+    color: rgb(216, 229, 238);
+}
+
+/* ============================================= */
+#resultado {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.corVerde {
+    background: rgb(130, 238, 175);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 10px;
+}
+
+.corLaranja {
+    background: rgb(248, 236, 126);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 10px;
+}
+
+.corVermelho {
+    background: rgb(248, 123, 65);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 10px;
+}
